@@ -1,0 +1,43 @@
+{
+  "enable_observability": true,
+  "enable_context_engineering": true,
+  "enable_semantic_graph": true,
+  "enable_diffusion_repair": true,
+  "enable_rlhf": true,
+  "enable_synergies": true,
+  "integration_level": "advanced",
+  "auto_optimization": true,
+  "performance_monitoring": true,
+  "logging": {
+    "level": "INFO",
+    "format": "json",
+    "output": "file",
+    "rotation": "daily"
+  },
+  "memory_tiers": {
+    "short_term_tokens": 2000,
+    "episodic_tokens": 4000,
+    "long_term_tokens": 8000,
+    "graph_memory_tokens": 6000
+  },
+  "context_packing": {
+    "max_context_tokens": 8000,
+    "default_strategy": "adaptive",
+    "compression_ratio": 0.7
+  },
+  "semantic_graph": {
+    "storage_path": "extensions/semantic_graph",
+    "max_nodes": 10000,
+    "similarity_threshold": 0.7
+  },
+  "diffusion_repair": {
+    "num_seeds": 5,
+    "max_candidates": 10,
+    "confidence_threshold": 0.6
+  },
+  "rlhf": {
+    "preference_storage": "extensions/preference_data",
+    "reward_model_dim": 512,
+    "learning_rate": 0.001
+  }
+}
