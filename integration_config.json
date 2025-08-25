@@ -1,0 +1,12 @@
+{
+    "enable_confidence_filtering": true,
+    "confidence_filtering": {
+      "mode": "online",
+      "group_size": 2048,
+      "threshold": 17.0,
+      "filter_percent": 10,
+      "warmup_traces": 16,
+      "consensus_threshold": 0.95
+    }
+  }
+  
